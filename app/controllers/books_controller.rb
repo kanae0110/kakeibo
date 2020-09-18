@@ -38,7 +38,7 @@ class BooksController < ApplicationController
     def update
       
       if @book.update(book_params)
-          flash[:notice] = "家計簿にデータを１件更新しました。"
+          flash[:notice] = "家計簿にデータを１件更新しました"
           redirect_to acction: :show
       else
           flash.now[:alert] = "更新に失敗しました。"
