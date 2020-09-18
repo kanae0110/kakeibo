@@ -1,0 +1,5 @@
+Book.create(inout: 1, category: "給料", year: 2020, month: 8, amount: 20)
+Book.create(inout: 2, category: "家賃", year: 2020, month: 8, amount: 6)
+Book.create(inout: 2, category: "食費", year: 2020, month: 8, amount: 2)
+Book.create(inout: 2, category: "光熱費", year: 2020, month: 8, amount: 1)
+Book.create(inout: 2, category: "水道費", year: 2020, month: 8, amount: 0.5)
