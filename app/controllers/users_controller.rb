@@ -1,4 +1,7 @@
 class UsersController < ApplicationController
+  
+  before_action :redirect_to_signin, only: [:edit, :update]
+  
     def new
       @user = User.new
     end
@@ -16,11 +19,11 @@ class UsersController < ApplicationController
     end
     
     def edit
-      @user = User.find(params[:id])
+      @user = User.find(session[:id])
     end
     
     def update
-      @user = User.find(params[:id])
+      @user = User.find(session[:id])
       user_params = params.require(:user).permit(:name, :email)
       if @user.update(user_params)
           flash[:notice] = "更新しました"

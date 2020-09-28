@@ -15,6 +15,7 @@
       <div class="navbar-brand">家計簿アプリ</div>
       <div>
        <% if session[:user_id].present? %>
+        <%= link_to "会員登録の変更", edit_user_path, class: "btn btn-outline-info" %> 
         <%= link_to "ログアウト", signout_path, class: "btn btn-outline-secondary" %>
         
        <% else %>
