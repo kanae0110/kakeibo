@@ -12,7 +12,7 @@
 
   <body>
     <nav class="navbar navbar-light bg-kight">
-      <div class="navbar-brand">家計簿アプリ</div>
+      <a href="/" class="navbar-brand">家計簿アプリ</a>
       <div>
        <% if session[:user_id].present? %>
         <%= link_to "会員登録の変更", edit_user_path, class: "btn btn-outline-info" %> 
